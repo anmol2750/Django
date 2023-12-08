@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Queryset : Data fetching
+{% endblock %}
+
+{% block content %}
+    <table border="1">
+        {{ mymember }}
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        {% for x in mymember %}
+            <tr>
+                <td>{{ x.id }}</td>
+                <td>{{ x.firstname }}</td>
+                <td>{{ x.lastname }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+ 
