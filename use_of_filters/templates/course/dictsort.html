@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Dictsort Filter </title>
+    </head>
+    <body>
+        {% for x in cars|dictsort:"year" %}
+        <p>{{ x.year }} {{ x.brand }} {{ x.model }}.</p>
+        {% endfor %}
+    </body>
+</html>                  

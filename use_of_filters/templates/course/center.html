@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Center Filter</title>
+    </head>
+    <body>
+        <h1>{{ name|center:20 }}</h1>
+        <p>In HTML the display does not show more than one space,
+            but if you view the page source you will see that there are
+            20 characters between &lt;h1&gt; and &lt;/h1&gt;.
+        </p>
+        <p>Or, to demonstrate we can use a textarea to see that "Social" is center aligned:</p>
+        <textarea>{{ name|center:20 }}</textarea>
+    </body>
+</html> 
