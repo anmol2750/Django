@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='stylesheet' href='{% static 'css/style.css' %}'/>
+        <title> {{title}} </title>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <h1> Start Learning {{cname}} </h1>    
+        <img src='{% static 'images/django.jpeg' %}' alt='Django'/>
+        <!--<img src='{% get_static_prefix %}images/django.jpeg' alt='Django'/>-->
+    </body>
+</html>
